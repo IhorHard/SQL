@@ -45,4 +45,29 @@ SELECT DISTINCT LAPTOP.model, price  FROM LAPTOP JOIN PRODUCT ON LAPTOP.MODEL = 
 UNION
 SELECT DISTINCT PRINTER.model, price  FROM PRINTER JOIN PRODUCT ON PRINTER.MODEL = PRODUCT.MODEL WHERE MAKER = 'B'
 -------------------------
+8) Найдите производителя, выпускающего ПК, но не ПК-блокноты.
 
+SELECT maker 
+FROM PRODUCT
+WHERE TYPE = 'pc'
+AND MAKER NOT IN (SELECT maker FROM PRODUCT WHERE type = 'laptop')
+GROUP BY maker
+-------------------------
+9) Найдите производителей ПК с процессором не менее 450 Мгц. Вывести: Maker
+
+SELECT maker 
+FROM PC JOIN PRODUCT ON PC.model = PRODUCT.model
+WHERE type = 'pc'
+AND speed >=450 GROUP BY maker
+-------------------------
+10) Найдите среднюю скорость ПК.
+
+SELECT AVG(speed) 
+avg_speed  FROM PC
+-------------------------
+11) Найдите среднюю скорость ПК-блокнотов, цена которых превышает 1000 дол.
+
+SELECT AVG (speed)  avg  
+FROM laptop 
+WHERE price > 1000
+-------------------------
