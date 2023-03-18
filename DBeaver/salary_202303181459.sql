@@ -8,4 +8,4 @@ INSERT INTO salary (monthly_salary) VALUES
 	 (3000),
 	 (4000),
 	 (5000),
-	 (3500);
+	 
