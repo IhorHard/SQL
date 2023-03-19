@@ -1,3 +1,9 @@
+-- Создать таблицу roles
+-- - id. Serial  primary key,
+-- - role_name. int, not null, unique
+-- Поменять тип столба role_name с int на varchar(30)
+-- Наполнить таблицу roles 20 строками:
+----------------------------------------------------
 INSERT INTO roles1 (role_name) VALUES
 	 ('Junior Python developer'),
 	 ('Middle Python developer'),
