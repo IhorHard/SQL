@@ -2,7 +2,7 @@
 -- - id. Serial  primary key,
 -- - monthly_salary. Int, not null
 -- Наполнить таблицу salary 15 строками:
-
+-----------------------------------------
 INSERT INTO salary1 (monthly_salary) VALUES
 	 (1000),
 	 (1100),
