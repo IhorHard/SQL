@@ -1,3 +1,9 @@
+-- Создать таблицу roles_employee
+-- - id. Serial  primary key,
+-- - employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
+-- - role_id. Int, not null (внешний ключ для таблицы roles, поле id)
+-- Наполнить таблицу roles_employee 40 строками:
+-----------------------------------------------------------
 INSERT INTO roles_employee (employee_id,role_id) VALUES
 	 (1,2),
 	 (2,1),
