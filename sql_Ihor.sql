@@ -71,3 +71,21 @@ SELECT AVG (speed)  avg
 FROM laptop 
 WHERE price > 1000
 -------------------------
+12) Найдите среднюю скорость ПК, выпущенных производителем A.
+
+SELECT AVG (speed) avg_speed 
+ FROM PC JOIN PRODUCT ON PRODUCT.model = PC.model  
+WHERE  maker = 'A'
+-------------------------
+13) Найдите класс, имя и страну для кораблей из таблицы Ships, имеющих не менее 10 орудий.
+
+SELECT  ships.class,ships.name, country 
+FROM ships  JOIN classes ON classes.class = ships.class
+WHERE numGuns >= 10
+-------------------------
+14) Найдите размеры жестких дисков, совпадающих у двух и более PC. Вывести: HD
+
+SELECT hd 
+FROM PC
+GROUP BY hd HAVING COUNT(*) >=2
+-------------------------
