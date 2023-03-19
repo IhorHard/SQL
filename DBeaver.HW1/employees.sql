@@ -63,7 +63,7 @@ INSERT INTO employees (employee_name) VALUES
 	 ('Ursa'),
 	 ('Hard'),
 	 ('Guts'),
-	 ('Wex');
+	 ('Ivan');
 INSERT INTO employees (employee_name) VALUES
 	 ('Vadim'),
 	 ('Pasha'),
