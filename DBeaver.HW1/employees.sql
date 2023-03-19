@@ -75,5 +75,4 @@ INSERT INTO employees (employee_name) VALUES
 	 ('Maks'),
 	 ('Vova'),
 	 ('Mircha');
-INSERT INTO employees (employee_name) VALUES
-	 ('Marusya');
+
